@@ -1,0 +1,268 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+:root {
+  --primary-orange: #f9ab00;
+}
+body{
+  font-family: "Roboto Condensed", sans-serif !important;
+}
+
+.logo {
+  width: 5.25rem;
+}
+nav {
+  z-index: 2;
+  
+}
+/*menu links*/
+nav a.nav-link {
+  cursor: pointer;
+  font-family: "Roboto Condensed", sans-serif;
+}
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.175rem solid black;
+}
+
+/*header*/
+.header-wrapper {
+  position: relative;
+  background: url(back4.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.main-info {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  z-index: 1;
+}
+.main-info h1 {
+  color: white;
+  text-transform: uppercase;
+}
+
+/*typed-text*/
+.typed-text {
+  font-size: 2 rem;
+  color: white;
+}
+/*main offer btn*/
+.btn-main-offer {
+  border: 1px solid white;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: white;
+  margin: 2 rem;
+}
+.btn-main-offer:hover {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  transition: 0.2s ease-in-out;
+}
+
+/*prticles*/
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+/*changes in mobile device*/
+@media (max-width: 768px) {
+  .particles-canvas {
+    display: none;
+  }
+  .main-info h1 {
+    font-size: 1.7rem;
+  }
+  .typed-text {
+    font-size: 1.3rem;
+  }
+  
+  .logo {
+  height: 4 rem;
+}
+  
+}
+@media(max-width:468px) {
+  .profile-img{
+    width: 10rem;
+  }  
+
+}
+
+
+/*about me*/
+.photo-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profile-img{
+  width: 16rem;
+  border-radius: 50%;
+  padding: .3rem;
+  border:1 px solid black;
+}
+.about-me{
+  color: black;
+  text-transform: uppercase;
+  
+  font-weight: bold;
+  
+}
+
+/*Services*/
+.services{
+  text-align:center;
+  padding-bottom: 2rem;
+  background: lightgray;
+}
+.services h1{
+  color: black;
+  text-transform: uppercase;
+}
+.services .circle{
+  position: relative;
+  margin: 0.375rem auto;
+  background: coral;
+  border-radius: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.services .icon{
+ font-size: 1.4 rem;
+ color: white;
+ position:absolute ;
+ top: 50%; 
+ left: 50%;
+ transform: translate(-50%,-50%);
+}
+.services .box{
+  height: 16rem;
+  border-bottom: .3125rem solid coral;
+  padding: 0.625rem;
+  margin-bottom:1.875 rem ;
+  background: white;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.services .box:hover{
+  background: coral;
+  border-bottom: .3125rem solid black;
+}
+
+/*Portfolio*/
+
+.portfolio-wrapper{
+  background: lightgray;
+  padding: 3 rem 0;
+  display: flex;
+
+}
+.portfolio-image{
+  width: 15rem;
+  border: 2px solid coral;
+  padding: 0 0.5rem;
+   height: 130px;
+  
+}
+.portfolio-image-box{
+  float:left ;  
+  flex: 25%;
+  padding: 1rem;  
+  cursor: pointer;
+}
+
+.contacts{
+  background: lightgray;
+  padding:3 rem 0;
+}
+
+.contacts h1{
+  color: black;
+  padding: 1.3rem 0;
+  text-transform: uppercase;
+}
+.contacts p{
+  font-size: 1.2rem;
+}
+
+/*input area*/
+.contacts input, .contacts textarea{
+  width: 100%;
+  box-sizing: border-box;
+  background: none;
+  resize:none;
+  border:0;
+  border-bottom: 0.125rem solid black;
+  border-radius: 0; 
+  margin-bottom: 1rem;
+  outline: 0 !important;
+  box-shadow: none !important;
+  top: 0;
+}
+.contacts .container{
+  padding: 4rem 0;
+}
+.contacts input:focus, .contacts textarea:focus{
+  background: transparent;
+  color: black;
+  border-bottom: 0.125rem solid black;
+}
+
+.contacts textarea{
+  height: 10rem !important;
+  margin: 2rem 0;
+
+}
+.contact-btn{
+  margin: 1rem 0 0 0;
+  background:slategray;
+  width: 100%;  
+}
+@media(max-width:76px){
+  .contacts .container{
+    padding: 0 1rem;
+  }
+  .contacts p{
+    padding: 0 0.4rem;
+  }
+}
+
+/*Footer*/
+.footer{
+  background: black;
+  color: grey;
+  padding: 3rem;
+    
+}
+.footer a{
+  text-decoration: none;
+  color:grey;
+
+}
+.footer a:hover{
+  text-decoration: none;
+  color:coral;
+  cursor:pointer;
+}
+.footer p{
+  margin-bottom: 0;
+}
